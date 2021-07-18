@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>WaLI - Config!</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="text-center">WaLI Configuration</h1>
+        <form action="/config" method="POST">
+            <div class="accordion" id="accordionConfig">
+                <!-- General Options -->
+                <div class="accordian-item">
+                    <h2 class="accordion-header" id="headingGeneral">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGeneral" aria-expanded="true" aria-controls="collapseOne">
+                            General Options
+                        </button>
+                    </h2>
+                    <div id="collapseGeneral" class="accordion-collapse collapse show" aria-labelledby="headingGeneral" data-bs-parent="#accordionConfig">
+                        <div class="accordion-body">
+                            <p>Options Here</p> 
+                        </div>
+                      </div>
+                </div>
+
+
+                
+                <!-- Display Options -->
+                <div class="accordian-item">
+                    <h2 class="accordion-header" id="headingDisplay">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDisplay" aria-expanded="true" aria-controls="collapseOne">
+                            Display Options
+                        </button>
+                    </h2>
+                    <div id="collapseDisplay" class="accordion-collapse collapse show" aria-labelledby="headingDisplay" data-bs-parent="#accordionConfig">
+                        <div class="accordion-body">
+                            <p>Options Here</p> 
+                        </div>
+                      </div>
+                </div>
+
+                <!-- Sensor Options -->
+                <div class="accordian-item">
+                    <h2 class="accordion-header" id="headingSensor">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSensor" aria-expanded="true" aria-controls="collapseOne">
+                            Sensor Options
+                        </button>
+                    </h2>
+                    <div id="collapseSensor" class="accordion-collapse collapse show" aria-labelledby="headingSensor" data-bs-parent="#accordionConfig">
+                        <div class="accordion-body">
+                            <p>Options Here</p> 
+                        </div>
+                      </div>
+                </div>
+
+
+                <!-- Buzzer Options -->
+                <div class="accordian-item">
+                    <h2 class="accordion-header" id="headingBuzzer">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBuzzer" aria-expanded="true" aria-controls="collapseOne">
+                            Buzzer Options
+                        </button>
+                    </h2>
+                    <div id="collapseBuzzer" class="accordion-collapse collapse show" aria-labelledby="headingBuzzer" data-bs-parent="#accordionConfig">
+                        <p class="text-center" >Sound Buzzer When:</p>
+                        <div class="accordion-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkBuzzerOnFull" name="checkBuzzerOnFull">
+                                <label class="form-check-label" for="checkBuzzerOnFull">
+                                  Full
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkBuzzerOnEmpty" name="checkBuzzerOnEmpty">
+                                <label class="form-check-label" for="checkBuzzerOnEmpty">
+                                  Empty
+                                </label>
+                            </div>  
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkBuzzerOnDrain" disabled name="checkBuzzerOnDrain">
+                                <label class="form-check-label" for="checkBuzzerOnDrain">
+                                  Fast Drain
+                                </label>
+                            </div>  
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

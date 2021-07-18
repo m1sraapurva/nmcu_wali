@@ -1,0 +1,7 @@
+{
+    "ssid": "test",
+    "password": "test",
+    "buzzer": "off",
+    "lcd_mode": "off",
+    "led_bar_mode": "off"
+}

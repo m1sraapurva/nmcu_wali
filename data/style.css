@@ -1,0 +1,27 @@
+.app-heading-row{
+    background-color: cadetblue;
+    margin-bottom: 2rem;
+    margin-top: 0rem;
+    padding: 0.5rem;
+    /* border-radius: 2rem; */
+}
+
+
+.led {
+    height: 1.5rem;
+    width: 5rem;
+    border: 1px solid black;
+    margin-bottom: 1px;
+}
+
+.led-red {
+    background-color: red;
+}
+
+.led-yellow {
+    background-color: yellow;
+}
+
+.led-green {
+    background-color: yellowgreen;
+}
